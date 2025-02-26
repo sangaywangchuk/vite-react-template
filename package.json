@@ -7,8 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "prepare": "husky"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@hookform/resolvers": "^4.1.2",
@@ -61,12 +60,6 @@
     "vaul": "^1.1.2",
     "zod": "^3.24.2"
   },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "yarn eslint .",
-      "yarn tsc"
-    ]
-  },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
     "@tanstack/router-devtools": "^1.111.7",
@@ -80,8 +73,6 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
-    "husky": "^9.1.7",
-    "lint-staged": "^15.4.3",
     "prettier": "^3.5.2",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",

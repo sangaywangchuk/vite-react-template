@@ -7,6 +7,6 @@ export const Route = createFileRoute('/')({
 
 function RouteComponent() {
   return <div>
-    <Button>Click m asdfasdf asdfas asdfasdfdf</Button>
+    <Button>Click m asdfasdf</Button>
   </div>
 }
