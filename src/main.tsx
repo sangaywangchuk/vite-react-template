@@ -5,6 +5,7 @@ import "./styles/globals.css";
 // Import the generated route tree
 import { routeTree } from "./routeTree.gen";
 import SWRConfigProvider from "./providers/swr-config-provider";
+import { ThemeProvider } from "./providers/theme-provider";
 
 // Create a new router instance
 const router = createRouter({ routeTree });
@@ -22,9 +23,11 @@ if (!rootElement.innerHTML) {
   const root = ReactDOM.createRoot(rootElement);
   root.render(
     <StrictMode>
-      <SWRConfigProvider>
-        <RouterProvider router={router} />
-      </SWRConfigProvider>
+      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+        <SWRConfigProvider>
+          <RouterProvider router={router} />
+        </SWRConfigProvider>
+      </ThemeProvider>
     </StrictMode>
   );
 }
