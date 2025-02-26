@@ -22,6 +22,7 @@ export default tseslint.config(
         tsconfigRootDir: import.meta.dirname,
       },
     },
+    settings: { react: { version: "19.0.0" } },
     plugins: {
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
@@ -29,6 +30,8 @@ export default tseslint.config(
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
+      ...react.configs.recommended.rules,
+      ...react.configs["jsx-runtime"].rules,
       "react-refresh/only-export-components": [
         "warn",
         { allowConstantExport: true },
