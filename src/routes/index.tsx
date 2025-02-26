@@ -6,7 +6,7 @@ export const Route = createFileRoute('/')({
 })
 
 function RouteComponent() {
-  return <div className=''>
-    <Button>Click m asdfasdf asdfasdf</Button>
+  return <div>
+    <Button>Click m asdfasdf asdfas asdfasdfdf</Button>
   </div>
 }
